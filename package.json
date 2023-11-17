@@ -1,0 +1,30 @@
+{
+  "name": "cypress-template",
+  "version": "1.0.0",
+  "description": "Projeto inicial para estudos do Cypress",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:run-video": "cypress run --config video=true",
+    "cypress:run-backend": "cypress run --spec cypress/e2e/backend/viaCep.cy.js",
+    "cypress:run-toDoPage": "cypress run --spec cypress/e2e/toDoPage/todo.cy.js",
+    "lint": "eslint 'cypress/**'"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.6.0",
+    "eslint": "^8.34.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-json": "^3.1.0"
+  },
+  "dependencies": {
+    "jsonschema": "^1.4.1"
+  }
+}
